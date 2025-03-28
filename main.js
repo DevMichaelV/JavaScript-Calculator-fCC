@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "https://esm.sh/react";
-import ReactDOM from "https://esm.sh/react-dom";
+import { createRoot } from 'https://esm.sh/react-dom/client';
+
+
+const domNode = document.getElementById("root")
+const root = createRoot(domNode)
 
 const App = () => {
   const opsArr = ["+", "-", "*", "/"];
@@ -11,7 +15,7 @@ const App = () => {
   const [val, setVal] = useState("");
   const [cChar, setCChar] = useState("");
   const [isCalced, setIsCalced] = useState(0);
-  
+   
   const endsWithOp = (str) => {
     if(opsArr.includes(str[str.length-1])) {
       return true;
@@ -200,4 +204,4 @@ const App = () => {
   ); }
 }
 
-ReactDOM.render(<App/>, document.getElementById("root"));
+root.render(<App />);
