@@ -1,0 +1,100 @@
+:root {
+  --body-bg-color: #0a0a23;
+  --app-bg-color: #1e3abd;
+  --display-bg-color: #a8c64e;
+  --num-bg-color: #ffb3ff;
+  --regop-bg-color: #ffff99;
+  --red-bg-color: #ff4d4d;
+  --blue-bg-color: #00beef;
+  --green-bg-color: #beef00;
+  --app-bg: linear-gradient(
+    45deg,#00beef,purple);
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator {
+  background-color: var(--app-bg-color);
+  background: var(--app-bg);
+  padding: 12px;
+  margin: 10px;
+  border-radius: 1rem;
+}
+
+#info-wrap {
+  display: none;
+  margin-bottom: 10px;
+  padding: 0 4px;
+  color: #c0c0c0;
+  background-color: var(--app-bg-color);
+  border: 1px solid black;
+}
+
+.display-wrap {
+  background-color: var(--display-bg-color);
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+#formula, #display {
+  min-height: 20px;
+  padding: 2px;
+  text-align: right;
+}
+
+#display {
+  font-size: 1.5rem;
+}
+
+#calculator td {
+  width: 35px;
+  height: 35px;
+}
+
+#calculator button {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 1px solid black;
+  border-radius: 1rem; 
+}
+
+#calculator button:hover {
+  background-color: #c0c0c0;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+#calculator #clear {
+  font-size: 0.8rem;
+}
+
+.num {
+  background-color: var(--num-bg-color);
+}
+
+.reg-op {
+  background-color: var(--regop-bg-color);
+}
+
+.greenbtn {
+  background-color: var(--green-bg-color);
+}
+
+.redbtn {
+  background-color: var(--red-bg-color);
+}
+
+.bluebtn {
+  background-color: var(--blue-bg-color);
+}
